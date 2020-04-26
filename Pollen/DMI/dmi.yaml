@@ -1,0 +1,96 @@
+sensor:
+  - platform: scrape
+    name: Pollen København Birk
+    resource: https://www.dmi.dk/dmidk_byvejrWS/rest/texts/forecast/pollen/Danmark
+    select: "value"
+    index: 0
+ 
+  - platform: scrape
+    name: Pollen København Bynke
+    resource: https://www.dmi.dk/dmidk_byvejrWS/rest/texts/forecast/pollen/Danmark
+    select: "value"
+    index: 1
+ 
+  - platform: scrape
+    name: Pollen København El
+    resource: https://www.dmi.dk/dmidk_byvejrWS/rest/texts/forecast/pollen/Danmark
+    select: "value"
+    index: 2
+ 
+  - platform: scrape
+    name: Pollen København Elm
+    resource: https://www.dmi.dk/dmidk_byvejrWS/rest/texts/forecast/pollen/Danmark
+    select: "value"
+    index: 3
+ 
+  - platform: scrape
+    name: Pollen København Græs
+    resource: https://www.dmi.dk/dmidk_byvejrWS/rest/texts/forecast/pollen/Danmark
+    select: "value"
+    index: 4
+ 
+  - platform: scrape
+    name: Pollen København Hassel
+    resource: https://www.dmi.dk/dmidk_byvejrWS/rest/texts/forecast/pollen/Danmark
+    select: "value"
+    index: 5
+ 
+  - platform: scrape
+    name: Pollen København Alternaria
+    resource: https://www.dmi.dk/dmidk_byvejrWS/rest/texts/forecast/pollen/Danmark
+    select: "value"
+    index: 6
+ 
+  - platform: scrape
+    name: Pollen København Cladosporium
+    resource: https://www.dmi.dk/dmidk_byvejrWS/rest/texts/forecast/pollen/Danmark
+    select: "value"
+    index: 7
+ 
+  - platform: scrape
+    name: Pollen København Forecast
+    resource: https://www.dmi.dk/dmidk_byvejrWS/rest/texts/forecast/pollen/Danmark
+    select: "forecast"
+    index: 0
+ 
+  - platform: scrape
+    name: Pollen Viborg Birk
+    resource: https://www.dmi.dk/dmidk_byvejrWS/rest/texts/forecast/pollen/Danmark
+    select: "value"
+    index: 8
+ 
+  - platform: scrape
+    name: Pollen Viborg Bynke
+    resource: https://www.dmi.dk/dmidk_byvejrWS/rest/texts/forecast/pollen/Danmark
+    select: "value"
+    index: 9
+ 
+  - platform: scrape
+    name: Pollen Viborg El
+    resource: https://www.dmi.dk/dmidk_byvejrWS/rest/texts/forecast/pollen/Danmark
+    select: "value"
+    index: 10
+ 
+  - platform: scrape
+    name: Pollen Viborg Elm
+    resource: https://www.dmi.dk/dmidk_byvejrWS/rest/texts/forecast/pollen/Danmark
+    select: "value"
+    index: 11
+ 
+  - platform: scrape
+    name: Pollen Viborg Græs
+    resource: https://www.dmi.dk/dmidk_byvejrWS/rest/texts/forecast/pollen/Danmark
+    select: "value"
+    index: 12
+ 
+  - platform: scrape
+    name: Pollen Viborg Hassel
+    resource: https://www.dmi.dk/dmidk_byvejrWS/rest/texts/forecast/pollen/Danmark
+    select: "value"
+    index: 13
+ 
+  - platform: scrape
+    name: Pollen Viborg Forecast
+    resource: https://www.dmi.dk/dmidk_byvejrWS/rest/texts/forecast/pollen/Danmark
+    select: "forecast"
+    index: 1

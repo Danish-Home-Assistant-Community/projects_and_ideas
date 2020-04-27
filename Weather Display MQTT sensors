@@ -1,0 +1,181 @@
+#------------------------------------------------------
+# WEATHER-DISPLAY Sensors
+#------------------------------------------------------
+
+#------------------------------------------------------
+# Temperature
+#------------------------------------------------------
+
+- platform: mqtt
+  name: 'WeatherDisplay Temperature'
+  state_topic: 'WeatherDisplay/temp'
+  value_template: '{{ value_json.temp }}'
+  unit_of_measurement: '°C'
+
+- platform: mqtt
+  name: 'WeatherDisplay Temperature Max'
+  state_topic: 'WeatherDisplay/tempmax'
+  value_template: '{{ value_json.tempmax }}'
+  unit_of_measurement: '°C'
+
+- platform: mqtt
+  name: 'WeatherDisplay TempMaxTime'
+  state_topic: 'WeatherDisplay/tempmaxtime'
+  value_template: '{{ value_json.tempmaxtime }}'
+
+- platform: mqtt
+  name: 'WeatherDisplay Temperature Min'
+  state_topic: 'WeatherDisplay/tempmin'
+  value_template: '{{ value_json.tempmin }}'
+  unit_of_measurement: '°C'
+
+- platform: mqtt
+  name: 'WeatherDisplay TempMinTime'
+  state_topic: 'WeatherDisplay/tempmintime'
+  value_template: '{{ value_json.tempmintime }}'
+
+#------------------------------------------------------
+# Rain
+#------------------------------------------------------
+
+- platform: mqtt
+  name: 'WeatherDisplay Rain'
+  state_topic: 'WeatherDisplay/rain'
+  value_template: '{{ value_json.rain }}'
+  unit_of_measurement: 'mm'
+
+- platform: mqtt
+  name: 'WeatherDisplay Rain Måned'
+  state_topic: 'WeatherDisplay/rainmonth'
+  value_template: '{{ value_json.rainmonth }}'
+  unit_of_measurement: 'mm'
+
+- platform: mqtt
+  name: 'WeatherDisplay Rain År'
+  state_topic: 'WeatherDisplay/rainyear'
+  value_template: '{{ value_json.rainyear }}'
+  unit_of_measurement: 'mm'
+
+- platform: mqtt
+  name: 'WeatherDisplay Rain Rate'
+  state_topic: 'WeatherDisplay/rainrate'
+  value_template: '{{ value_json.rainrate }}'
+  unit_of_measurement: 'mm'
+
+- platform: mqtt
+  name: 'WeatherDisplay Rain Days Month'
+  state_topic: 'WeatherDisplay/raindaysmonth'
+  value_template: '{{ value_json.raindaysmonth }}'
+
+- platform: mqtt
+  name: 'WeatherDisplay Rain Days Year'
+  state_topic: 'WeatherDisplay/raindaysyear'
+  value_template: '{{ value_json.raindaysyear }}'
+
+#------------------------------------------------------
+# Wind
+#------------------------------------------------------
+
+- platform: mqtt
+  name: 'WeatherDisplay Wind'
+  state_topic: 'WeatherDisplay/wind'
+  value_template: '{{ value_json.wind }}'
+  unit_of_measurement: 'm/s'
+
+- platform: mqtt
+  name: 'WeatherDisplay Vindstød'
+  state_topic: 'WeatherDisplay/windstoed'
+  value_template: '{{ value_json.windstoed }}'
+  unit_of_measurement: 'm/s'
+
+- platform: mqtt
+  name: 'WeatherDisplay Vind Max'
+  state_topic: 'WeatherDisplay/windmax'
+  value_template: '{{ value_json.windmax }}'
+  unit_of_measurement: 'm/s'
+
+- platform: mqtt
+  name: 'WeatherDisplay Vind Retning'
+  state_topic: 'WeatherDisplay/winddirection'
+  value_template: '{{ value_json.winddirection }}'
+  unit_of_measurement: ''
+
+#------------------------------------------------------
+# Barometer - Dewpoint - Humidity - Daylight - Cloud
+#------------------------------------------------------
+
+- platform: mqtt
+  name: 'WeatherDisplay Barometer'
+  state_topic: 'WeatherDisplay/barometer'
+  value_template: '{{ value_json.baro }}'
+  unit_of_measurement: 'hPa'
+
+- platform: mqtt
+  name: 'WeatherDisplay Dewpoint'
+  state_topic: 'WeatherDisplay/dewpoint'
+  value_template: '{{ value_json.dew }}'
+  unit_of_measurement: '°C'
+
+- platform: mqtt
+  name: 'WeatherDisplay Humidity'
+  state_topic: 'WeatherDisplay/humidity'
+  value_template: '{{ value_json.hum}}'
+  unit_of_measurement: '%'
+
+- platform: mqtt
+  name: 'WeatherDisplay Possible day light'
+  state_topic: 'WeatherDisplay/possibledaylight'
+  value_template: '{{ value_json.possibledaylight }}'
+  unit_of_measurement: 'timer'
+
+- platform: mqtt
+  name: 'WeatherDisplay Cloudheightmeters'
+  state_topic: 'WeatherDisplay/cloudheightmeters'
+  value_template: '{{ value_json.cloudheightmeters }}'
+  unit_of_measurement: 'm'
+
+- platform: mqtt
+  name: 'WeatherDisplay Vind Chill'
+  state_topic: 'WeatherDisplay/windchill'
+  value_template: '{{ value_json.windchill }}'
+  unit_of_measurement: '°C'
+
+- platform: mqtt
+  name: 'WeatherDisplay Føles Som'
+  state_topic: 'WeatherDisplay/feelslike'
+  value_template: '{{ value_json.feelslike }}'
+  unit_of_measurement: '°C'
+
+#------------------------------------------------------
+# Sun - Moon
+#------------------------------------------------------
+
+- platform: mqtt
+  name: 'WeatherDisplay Sol op'
+  state_topic: 'WeatherDisplay/sunrise'
+  value_template: '{{ value_json.sunrise }}'
+
+- platform: mqtt
+  name: 'WeatherDisplay Sol ned'
+  state_topic: 'WeatherDisplay/sunset'
+  value_template: '{{ value_json.sunset }}'
+
+- platform: mqtt
+  name: 'WeatherDisplay Måne Op'
+  state_topic: 'WeatherDisplay/moonrise'
+  value_template: '{{ value_json.moonrise }}'
+
+- platform: mqtt
+  name: 'WeatherDisplay Måne Ned'
+  state_topic: 'WeatherDisplay/moonset'
+  value_template: '{{ value_json.moonset }}'
+
+- platform: mqtt
+  name: 'WeatherDisplay Fullmoondate'
+  state_topic: 'WeatherDisplay/fullmoondate'
+  value_template: '{{ value_json.fullmoondate }}'
+
+- platform: mqtt
+  name: 'WeatherDisplay Måne Fase Navn'
+  state_topic: 'WeatherDisplay/moonphasename'
+  value_template: '{{ value_json.moonphasename }}'

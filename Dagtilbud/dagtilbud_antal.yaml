@@ -1,0 +1,8 @@
+---
+# https://www.home-assistant.io/integrations/rest/
+platform: rest
+name: Solen (Antal)
+resource: https://admin.opendata.dk/api/3/action/datastore_search?q=solen_aarhus&resource_id=c29f6d4b-7d0c-48af-bb23-93f54c0b49bc#
+method: GET
+value_template: '{{ value_json.result.records[0].Antal }}'
+force_update: true

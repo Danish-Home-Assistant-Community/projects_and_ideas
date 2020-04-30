@@ -1,8 +1,8 @@
 **Dagtilbud**
 
-This sensors will retrieve data about dagtilbud.
+This sensors will retrieve data about dagtilbud from Aarhus Kommune.
 
-**Configuration**
+**Configuration:**
 
 1: Go to this url https://admin.opendata.dk/api/3/action/datastore_search?q=BYNAVN&resource_id=c29f6d4b-7d0c-48af-bb23-93f54c0b49bc# and make sure you replace BYNAVN with the name of the city you are interested in finding a dagtilbud in.
 
@@ -20,6 +20,31 @@ value_template: '{{ value_json.result.records[1].Antal }}' is pointing to the se
 
 value_template: '{{ value_json.result.records[2].Antal }}' is pointing to the third entry under records.
 
-**Note**
+**Data:**
+
+The following data points are available:
+```
+_id
+instid
+Periode
+Insttype
+Dagtilbud
+Instnavn
+Antal
+Adresse
+Postnr
+Postdist
+lat
+lng
+Ledernavn
+LINK
+rank
+```
+
+Origin data source: https://www.opendata.dk/city-of-aarhus/born-i-dagtilbud
+
+For data sources from other kommuner visit https://www.opendata.dk and search for available datasets for your kommune.
+
+**Note:**
 
 This is my first try with use of rest api, so this sensors can be make more smooth and with better quality!

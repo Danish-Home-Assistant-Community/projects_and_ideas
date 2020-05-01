@@ -1,8 +1,24 @@
 ---
 # https://www.home-assistant.io/integrations/rest/
 platform: rest
-name: Solen (Periode)
-resource: https://admin.opendata.dk/api/3/action/datastore_search?q=solen_aarhus&resource_id=c29f6d4b-7d0c-48af-bb23-93f54c0b49bc#
+name: "[Dagtilbud Aarhus] Solen"
+resource: resource: https://admin.opendata.dk/api/3/action/datastore_search?q=solen_aarhus&resource_id=c29f6d4b-7d0c-48af-bb23-93f54c0b49bc#
 method: GET
+json_attributes_path: "result.records[0]"
+json_attributes:
+  - _id
+  - instid
+  - Periode
+  - Insttype
+  - Dagtilbud
+  - Instnavn
+  - Antal
+  - Adresse
+  - Postnr
+  - Postdist
+  - lat
+  - lng
+  - Ledernavn
+  - LINK
 value_template: '{{ value_json.result.records[0].Periode }}'
-force_update: true
+scan_interval: 86400

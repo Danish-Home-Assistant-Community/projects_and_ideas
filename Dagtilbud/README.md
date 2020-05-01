@@ -2,6 +2,10 @@
 
 This sensors will retrieve data about dagtilbud from Aarhus Kommune.
 
+**Screenshot(s):**
+
+![Screenshot 1](https://github.com/Danish-Home-Assistant-Community/projects_and_ideas/blob/master/Dagtilbud/screenshot.jpg)
+
 **Configuration:**
 
 1: Go to this url https://admin.opendata.dk/api/3/action/datastore_search?q=BYNAVN&resource_id=c29f6d4b-7d0c-48af-bb23-93f54c0b49bc# and make sure you replace BYNAVN with the name of the city you are interested in finding a dagtilbud in.

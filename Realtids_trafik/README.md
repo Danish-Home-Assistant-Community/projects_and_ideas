@@ -55,6 +55,10 @@ This will generate template sensors for all attributes.
 ```
 sensor:
   ---
+  # https://www.opendata.dk/city-of-aarhus/realtids-trafikdata
+  # Pkt 1 https://www.openstreetmap.org/#map=19/56.21831017223658/10.167189431877205
+  # Pkt 2 https://www.openstreetmap.org/#map=19/56.21071820426365/10.173023480985648
+  # Distance 920 meters
   platform: template
   sensors:
     live_traffic_randersvej_ikea_id:

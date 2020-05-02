@@ -1,6 +1,8 @@
 ---
 # https://www.opendata.dk/city-of-aarhus/realtids-trafikdata
-# https://www.openstreetmap.org/#map=19/56.21831/10.16672
+# Pkt 1 https://www.openstreetmap.org/#map=19/56.21831017223658/10.167189431877205
+# Pkt 2 https://www.openstreetmap.org/#map=19/56.21071820426365/10.173023480985648
+# Distance 920 meters
 sensor:
   platform: rest
   name: "[Live Traffic] Randersvej, Ikea (vehicleCount)"

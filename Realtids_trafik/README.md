@@ -71,3 +71,9 @@ medianMeasuredTime
 vehicleCount
 avgSpeed
 ```
+
+Origin data source: https://www.opendata.dk/city-of-aarhus/realtids-trafikdata
+
+For data sources from other kommuner visit https://www.opendata.dk and search for available datasets for your kommune.
+
+*Note: This is my first try with use of rest api, so this sensors can be make more smooth and with better quality!*

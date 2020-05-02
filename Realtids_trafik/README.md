@@ -8,9 +8,17 @@ This sensors show realtime traffic information for Aarhus Kommune.
 
 ![Screenshot 1](https://github.com/Danish-Home-Assistant-Community/projects_and_ideas/blob/master/Realtids_trafik/screenshot)
 
-**Config:**
+**Configuration:**
 
-Is coming here....
+1: Go to this url https://www.opendata.dk/city-of-aarhus/realtids-trafikdata#resource-realtids_trafikdata_datadictionary and find the place you want to track, and copy the "REPORT_ID".
+
+2: Now replace REPORT_ID in this url https://admin.opendata.dk/api/3/action/datastore_search?q=REPORT_ID&resource_id=b3eeb0ff-c8a8-4824-99d6-e0a3747c8b0d
+
+this could look like this https://admin.opendata.dk/api/3/action/datastore_search?q=158776&resource_id=b3eeb0ff-c8a8-4824-99d6-e0a3747c8b0d
+
+3: Visit the url in your browser and make sure under records only 1 entry is listed.
+
+4: Now use the rest sensor with your url under resource.
 
 **Template Sensors:**
 

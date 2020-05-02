@@ -26,6 +26,14 @@ value_template: '{{ value_json.result.records[1].Antal }}' is pointing to the se
 
 value_template: '{{ value_json.result.records[2].Antal }}' is pointing to the third entry under records.
 
+**Template Sensors:**
+
+This will generate template sensors for all attributes.
+
+```
+Coming soon... Until ready you can find a equal template here: https://github.com/Danish-Home-Assistant-Community/projects_and_ideas/blob/master/Realtids_trafik/README.md
+```
+
 **Data:**
 
 The following data points are available:

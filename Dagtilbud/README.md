@@ -59,6 +59,4 @@ Origin data source: https://www.opendata.dk/city-of-aarhus/born-i-dagtilbud
 
 For data sources from other kommuner visit https://www.opendata.dk and search for available datasets for your kommune.
 
-**Note:**
-
-This is my first try with use of rest api, so this sensors can be make more smooth and with better quality!
+*Note: This is my first try with use of rest api, so this sensors can be make more smooth and with better quality!*

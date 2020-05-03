@@ -29,23 +29,23 @@ This will generate the main sensor (Required to use template sensors!).
 # https://www.opendata.dk/city-of-aarhus/realtids-trafikdata
 # https://www.openstreetmap.org/#map=19/56.21831/10.16672
 sensor:
-  platform: rest
-  name: "[Live Traffic] Randersvej, Ikea (vehicleCount)"
-  resource: https://admin.opendata.dk/api/3/action/datastore_search?q=158776&resource_id=b3eeb0ff-c8a8-4824-99d6-e0a3747c8b0d
-  method: GET
-  json_attributes_path: "result.records[0]"
-  json_attributes:
-    - _id
-    - REPORT_ID
-    - TIMESTAMP
-    - status
-    - avgMeasuredTime
-    - medianMeasuredTime
-    - vehicleCount
-    - avgSpeed
-  value_template: '{{ value_json.result.records[0].vehicleCount }}'
-  scan_interval: 60
-  force_update: false
+  - platform: rest
+    name: "[Live Traffic] Randersvej, Ikea (vehicleCount)"
+    resource: https://admin.opendata.dk/api/3/action/datastore_search?q=158776&resource_id=b3eeb0ff-c8a8-4824-99d6-e0a3747c8b0d
+    method: GET
+    json_attributes_path: "result.records[0]"
+    json_attributes:
+      - _id
+      - REPORT_ID
+      - TIMESTAMP
+      - status
+      - avgMeasuredTime
+      - medianMeasuredTime
+      - vehicleCount
+      - avgSpeed
+    value_template: '{{ value_json.result.records[0].vehicleCount }}'
+    scan_interval: 60
+    force_update: false
   ```
 
 **Template Sensors:**

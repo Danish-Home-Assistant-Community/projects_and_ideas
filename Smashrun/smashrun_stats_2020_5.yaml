@@ -1,0 +1,36 @@
+---
+# https://smashrun.com/allan.persson/invite
+# https://api.smashrun.com/v1/explorer
+sensor:
+  - platform: rest
+    name: "5/2020 Total Distance [Smashrun]"
+    resource: https://api.smashrun.com/v1/my/stats/2020/1?access_token=[YOURTOKEN]
+    method: GET
+    json_attributes_path: "."
+    json_attributes:
+      - runCount
+      - totalDistance
+      - averageSpeed
+      - averagePace
+      - longestRun
+      - longestRunWhen
+      - longestBreakBetweenRuns
+      - longestBreakBetweenRunsDate
+      - longestStreak
+      - longestStreakDate
+      - averageDistancePerDay
+      - averageRunLength
+      - averageDaysRunPerWeek
+      - mostOftenRunOnDay
+      - mostOftenRunOnCount
+      - mostOftenRunOnAverageDistance
+      - leastOftenRunOnDay
+      - leastOftenRunOnCount
+      - leastOftenRunOnAverageDistance
+      - daysRunAM
+      - daysRunPM
+      - daysRunBoth
+    value_template: '{{ value_json.totalDistance }}'
+    unit_of_measurement: km
+    scan_interval: 900
+    force_update: false

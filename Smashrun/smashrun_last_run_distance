@@ -1,48 +1,49 @@
 ---
 # https://smashrun.com/allan.persson/invite
 # https://api.smashrun.com/v1/explorer
-platform: rest
-name: Smashrun (Last Run Distance)
-resource: https://api.smashrun.com/v1/my/activities?access_token_[YOURTOKENHERE_MAKESURETHERIGHTNUMBEROF______s!!!]
-method: GET
-json_attributes_path: "0."
-json_attributes:
-  - activityId
-  - activityType
-  - duration
-  - calories
-  - notes
-  - startDateTimeLocal
-  - externalId
-  - source
-  - appVersion
-  - deviceType
-  - hasDetails
-  - hasDetailsGPS
-  - startLatitude
-  - startLongitude
-  - heartRateMax
-  - heartRateMin
-  - heartRateAverage
-  - cadenceMax
-  - cadenceMin
-  - cadenceAverage
-  - weatherType
-  - temperature
-  - humidity
-  - windSpeed
-  - temperatureApparent
-  - temperatureWindChill
-  - howFelt
-  - terrain
-  - isRace
-  - isTreadmill
-  - isBadHR
-  - isBadElevation
-  - syncDateTimeUTC
-  - dateCreatedUTC
-  - dateUpdatedUTC
-value_template: '{{ value_json.0.distance }}'
-unit_of_measurement: km
-scan_interval: 900
-force_update: false
+sensor:
+  platform: rest
+  name: Smashrun (Last Run Distance)
+  resource: https://api.smashrun.com/v1/my/activities?access_token_[YOURTOKENHERE_MAKESURETHERIGHTNUMBEROF______s!!!]
+  method: GET
+  json_attributes_path: "0."
+  json_attributes:
+    - activityId
+    - activityType
+    - duration
+    - calories
+    - notes
+    - startDateTimeLocal
+    - externalId
+    - source
+    - appVersion
+    - deviceType
+    - hasDetails
+    - hasDetailsGPS
+    - startLatitude
+    - startLongitude
+    - heartRateMax
+    - heartRateMin
+    - heartRateAverage
+    - cadenceMax
+    - cadenceMin
+    - cadenceAverage
+    - weatherType
+    - temperature
+    - humidity
+    - windSpeed
+    - temperatureApparent
+    - temperatureWindChill
+    - howFelt
+    - terrain
+    - isRace
+    - isTreadmill
+    - isBadHR
+    - isBadElevation
+    - syncDateTimeUTC
+    - dateCreatedUTC
+    - dateUpdatedUTC
+  value_template: '{{ value_json.0.distance }}'
+  unit_of_measurement: km
+  scan_interval: 900
+  force_update: false

@@ -4,6 +4,10 @@ This sensors show running data from Smashrun. Smashrun have autosync from many o
 
 **Screenshot(s):**
 
+![Screenshot 3](https://github.com/Danish-Home-Assistant-Community/projects_and_ideas/blob/master/Smashrun/screenshot_2.jpg)
+
+![Screenshot 2](https://github.com/Danish-Home-Assistant-Community/projects_and_ideas/blob/master/Smashrun/screenshot_1.jpg)
+
 ![Screenshot 1](https://github.com/Danish-Home-Assistant-Community/projects_and_ideas/blob/master/Smashrun/screenshot.jpg)
 
 **Configuration:**

@@ -1,0 +1,37 @@
+---
+# https://smashrun.com/allan.persson/invite
+# https://api.smashrun.com/v1/explorer
+# This sensor shows alltime data
+sensor:
+  - platform: rest
+    name: "Alltime Total Distance [Smashrun]"
+    resource: https://api.smashrun.com/v1/my/stats?access_token=[YOURTOKEN]
+    method: GET
+    json_attributes_path: "."
+    json_attributes:
+      - runCount
+      - totalDistance
+      - averageSpeed
+      - averagePace
+      - longestRun
+      - longestRunWhen
+      - longestBreakBetweenRuns
+      - longestBreakBetweenRunsDate
+      - longestStreak
+      - longestStreakDate
+      - averageDistancePerDay
+      - averageRunLength
+      - averageDaysRunPerWeek
+      - mostOftenRunOnDay
+      - mostOftenRunOnCount
+      - mostOftenRunOnAverageDistance
+      - leastOftenRunOnDay
+      - leastOftenRunOnCount
+      - leastOftenRunOnAverageDistance
+      - daysRunAM
+      - daysRunPM
+      - daysRunBoth
+    value_template: '{{ value_json.totalDistance }}'
+    unit_of_measurement: km
+    scan_interval: 900
+    force_update: false
